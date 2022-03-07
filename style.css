@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:root {
+  --color-putih: #f3f3f3;
+  --color-hijau-gelap: #789395;
+  --color-hijau-agak-terang: #B4CFB0;
+  --color-semi-hijau-gelap: #94B49F;
+  --color-hijau-kekuningan:#E5E3C9; 
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  z-index: -9;
+  background: var(--color-hijau-gelap);
+  background-image: linear-gradient(
+    115deg, 
+    rgba(8, 89, 95, 0.9) 0%,
+    rgba(15, 161, 66, 0.8) 41%,
+    rgba(158, 248, 162, 0.7) 100%
+  ),
+  url('https://resizer.in/tmp/[Resizer.in]-62256f3137d52.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+#title , #description {
+  text-align: center;
+  color: var(--color-putih);
+}
+
+#description {
+  font-size: 1.2em;
+}
+
+form {
+  padding: 3em;
+  background-color:var(--color-hijau-gelap);
+  color: var(--color-putih);
+}
+
+#survey-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height:2.245rem;
+  padding: 0.5em 0;
+}
+label {
+  color: var(--color-putih);
+}
+.form-input {
+  display: block;
+  height: 1em;
+  width: 100%;
+  padding:1.3rem;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+select {
+  display: block;
+  height: 3em;
+  width: 100%;
+  padding: 0 1.3rem;
+  font-size: inherit;
+  color: grey;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1.3em;
+  margin: 2.3em 50%;
+  color: inherit;
+  text-align: center;
+  font-size: inherit;
+  background-color: green;
+  border-radius: 10%;
+}
+
+.form-container-item {
+  padding: 0 30px;
+  width: 100%;
+}
+
+.form-group-item {
+  display: block
+}
+
+.form-group-item input {
+  display: inline;
+}
+
+textarea {
+  padding: 1.3rem;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+
+

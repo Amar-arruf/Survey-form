@@ -5,8 +5,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form | Amar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1 id="title">
+      Survey Form Freecodecamp
+    </h1>
+    <p id="description">
+      <cite>Terima kasih untuk anda yang sudah meluangkan waktunya untuk mengisi form survey ini</cite>
+    </p>
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukan Nama Lengkap" required class="form-input">
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukan email valid" required class="form-input">
+      </div>
+      <div class="form-group">
+        <label id="number-label">Umur <span>(optional)</span></label>
+        <input type="number" max="100" min="1" id="number" name="umur" placeholder="Umur" class="form-input" >
+      </div>
+      <div class="form-group">
+        <label for="">Pilih Bahasa Pemrograman yang kamu sukai</label>
+        <select id="dropdown" required>
+          <option disabled selected value="Pilih">Pilih</option>
+          <option value="Javascript">Javascript</option>
+          <option value="PHP">PHP</option>
+          <option value="Golang">Golang</option>
+          <option value="Dart">Dart</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Pilih botcamp coding yang paling kamu rekomendasikan</label>
+        <div class="form-container-item">
+          <div class="form-group-item">
+            <input type="checkbox" id="freecodecamp" name="freecodecamp" value="freecodecamp">
+            <label for="freecodecamp">Freecodecamp</label>
+          </div>
+          <div class="form-group-item">
+            <input type="checkbox" id="youtube" name="youtube" value="youtube">
+            <label for="youtube">youtube</label>
+          </div>
+          <div class="form-group-item">
+            <input type="checkbox" id="codeacademy" name="codeacademy" value="codeacademy">
+            <label for="codeacademy">codeacademy</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Jenis Kelamin</label>
+        <div class="form-container-item">
+          <input type="radio" id="laki" name="Gander" value="Laki-Laki">
+          <label for="laki">Laki - Laki</label>
+          <input type="radio" id="perempuan" name="Gander" value="perempuan">
+          <label for="css">Perempuan</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Ajukan Saran yang baik</label>
+        <textarea name="comment" id="comments" placeholder="Tulis Komentar di sini"></textarea>
+      </div>
+      <button type="submit" name="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  
+  <!-- Testing -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
